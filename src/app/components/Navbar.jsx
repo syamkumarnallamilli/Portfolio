@@ -20,7 +20,7 @@ const Navbar = () => {
   } hover:text-indigo-600`;
   }
   return (
-    <nav className=" bg-white  fixed shadow-lg w-full">
+    <nav className="fixed top-0 shadow-lg w-full">
       <div className="flex max-w-7xl px-6 py-4 justify-between items-center mx-auto">
         <div className="flex items-center space-x-2">
     <Image src="/image.png" alt="Logo" height={100} width={100} className="h-9 w-9 rounded-full" />
