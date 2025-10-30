@@ -1,24 +1,48 @@
 'use client';
-import { ExternalLink, Mail, MapPin, Phone, Pin } from "lucide-react";
+import { ExternalLink, Mail, MapPin, MessageCircleHeart, Phone, Pin } from "lucide-react";
 import React from "react";
+const whatsApp=process.env.NEXT_PUBLIC_WHATSAPP_NUMBER
 
+const MailTo=process.env.NEXT_PUBLIC_CONTACT_EMAIL
 const contactDetails = [
   {
     label: "Email",
-    value: "syamkumarnallamilli0@gmail.com",
-    icon: <Mail className="w-5 h-5 text-purple-500" />,
+    value: "Reach me via Email",
+     href:`https://mail.google.com/mail/?view=cm&fs=1&to=mailto:${MailTo}?subject=${encodeURIComponent(
+    "Let's Collaborate!"
+  )}&body=${encodeURIComponent(
+    `Hi Syam,
+
+I came across your portfolio and was really impressed with your work. I'd love to discuss a potential opportunity or collaboration with you.
+
+Please let me know when would be a good time to connect.
+
+Best regards,
+[Your Name]
+[Your Company / Organization]
+`
+  )}`,
+  className:"flex items-center gap-2 text-purple-600 hover:text-purple-800 transition",
+  icon: <Mail className="w-5 h-5 text-purple-500" />,
   },
+
   {
-    label: "Phone",
-    value: "Available upon request",
-    icon: <Phone className="w-5 h-5 text-purple-500" />,
+    label: "WhatsApp",
+    value: "Chat on WhatsApp",
+     href: `https://wa.me/${whatsApp}?text=${encodeURIComponent(
+    "Hi Syam! I saw your portfolio and would like to connect with you."
+  )}`,
+    icon: <MessageCircleHeart className="w-5 h-5 text-purple-500" />,
+  
   },
   {
     label: "Location",
     value: "Hyderabad, Telangana, India",
+    href: null, // just text, no link
     icon: <MapPin className="w-5 h-5 text-purple-500" />,
   },
 ];
+
 
 const profiles = [
   { label: "LinkedIn", url: "https://www.linkedin.com/in/syam-kumar-nallamilli-b17809240/" },
@@ -36,6 +60,7 @@ const Contact = () => {
 });
 const [loading, setLoading] = React.useState(false);
 const [error, setError] = React.useState("");
+
   const handleChange=(e)=>{
     const {name,value}=e.target;
     setFormData({...formData,[name]:value});
@@ -48,11 +73,9 @@ const handleSubmit = async (e) => {
   setError("");
   //Google form submission logic can be added here
   try {
-    const res = await fetch(SCRIPT_URL, {
+    const res = await fetch("api/contact", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded"
-      },
+      
       body: new URLSearchParams(formData).toString(),
     });
     if (!res.ok) throw new Error("Failed to send message");
@@ -66,8 +89,6 @@ const handleSubmit = async (e) => {
     setLoading(false);
   }
 };
-
-  
 
   return (
     <section className="w-full px-4 py-10 bg-gradient-to-r from-purple-100 via-white to-violet-100 flex flex-col items-center">
@@ -84,14 +105,27 @@ const handleSubmit = async (e) => {
         {/* Left Info Card */}
         <div className="bg-white shadow-md rounded-xl w-full md:w-1/3 p-8 space-y-6">
           {contactDetails.map((item, idx) => (
-            <div key={idx}>
-              <div className="flex items-center gap-2 text-gray-700">
-                {item.icon}
-                <p className="text-sm font-semibold">{item.label}</p>
-              </div>
-              <p className="text-sm text-gray-600 ml-7 mt-1 tracking-wider">{item.value}</p>
-            </div>
-          ))}
+  <div key={idx}>
+    <div className="flex items-center gap-2 text-gray-700">
+      {item.icon}
+      <p className="text-sm font-semibold">{item.label}</p>
+    </div>
+
+    {item.href ? (
+      <a
+        href={item.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm text-gray-600 ml-7 mt-1 tracking-wider hover:text-purple-600 transition"
+      >
+        {item.value}
+      </a>
+    ) : (
+      <p className="text-sm text-gray-600 ml-7 mt-1 tracking-wider">{item.value}</p>
+    )}
+  </div>
+))}
+
 
           {/* Professional Profiles */}
           <div className="border-t pt-4 ">
