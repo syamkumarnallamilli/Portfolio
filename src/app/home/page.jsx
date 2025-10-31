@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <section className="flex flex-col md:flex-row items-center justify-center min-h-screen px-5 md:px-8 lg:px-16 bg-gradient-to-br from-slate-900 via-gray-900 to-gray-800 overflow-hidden ">
       {/* ---- LEFT CONTENT ---- */}
-      <div className="flex  flex-col space-y-6 md:space-y-8 lg:space-y-10 text-left  md:text-left items-center md:items-start w-full md:w-1/2  p-2 md:p-6">
+      <div className="flex  flex-col space-y-6 md:space-y-8 lg:space-y-10 text-left  md:text-left  md:items-start w-full md:w-1/2  p-2 md:p-6">
         <motion.h1
           className="text-4xl md:text-5xl lg:text-7xl font-extrabold bg-gradient-to-r from-purple-400 via-pink-400 to-red-600 bg-clip-text text-transparent"
           initial={{ opacity: 0, y: -30 }}
@@ -39,8 +39,8 @@ export default function Home() {
             <Typewriter
               words={[
                 "FullStack Developer",
-                "React Developer",
-                "Next.js Developer",
+                "Web Developer",
+                
               ]}
               loop={true}
               cursor
