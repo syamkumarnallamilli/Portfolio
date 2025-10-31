@@ -1,0 +1,4 @@
+# robots.txt for Syam Kumar Portfolio
+User-agent: *
+Allow: /
+

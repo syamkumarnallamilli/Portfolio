@@ -29,3 +29,11 @@ body {
 .input-field {
   @apply w-full tracking-wide border font-medium text-xs border-gray-200 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400;
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
