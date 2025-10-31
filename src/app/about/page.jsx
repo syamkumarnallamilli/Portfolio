@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useAnimation } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState,useRef } from "react";
 
 export default function About() {
   const skills = [
@@ -38,17 +38,40 @@ export default function About() {
   ];
 
   const [isHovered, setIsHovered] = useState(false);
+    const [speed, setSpeed] = useState(25);
   const skillsControl = useAnimation();
+   const containerRef = useRef(null);
+
 
   // Skills horizontal auto-scroll
-  useEffect(() => {
-    if (isHovered) skillsControl.stop();
-    else
+  // useEffect(() => {
+  //   if (isHovered) skillsControl.stop();
+  //   else
+  //     skillsControl.start({
+  //       x: ["0%", "-100%"],
+  //       transition: { ease: "linear", duration: 25, repeat: Infinity },
+  //     });
+  // }, [isHovered, skillsControl]);
+useEffect(() => {
+    // Adjust scroll speed dynamically based on screen size
+    if (window.innerWidth < 768) setSpeed(20); 
+    else setSpeed(25);
+
+    const startAnimation = () => {
+      if (!containerRef.current) return;
+      const width = containerRef.current.scrollWidth; 
+      const viewWidth = containerRef.current.clientWidth;
+      const travel = width - viewWidth;
+
       skillsControl.start({
-        x: ["0%", "-100%"],
-        transition: { ease: "linear", duration: 25, repeat: Infinity },
+        x: [0, -travel],
+        transition: { ease: "linear", duration: speed, repeat: Infinity },
       });
-  }, [isHovered, skillsControl]);
+    };
+
+    if (!isHovered) startAnimation();
+    else skillsControl.stop();
+  }, [isHovered, speed, skillsControl]);
 
   return (
     <section className="min-h-screen  flex flex-col items-center justify-center px-6  lg:px-16  relative overflow-hidden">
@@ -139,6 +162,7 @@ export default function About() {
 
       {/* Bottom: Skills Carousel */}
       <div
+      ref={containerRef}
         className="overflow-hidden whitespace-nowrap relative py-6 mt-8 cursor-pointer w-full "
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
