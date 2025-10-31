@@ -27,13 +27,13 @@ export const metadata = {
     "Web Developer Portfolio",
   ],
 
-   authors: [{ name: "Syam Kumar", url: "https://yourdomain.vercel.app" }],
-  metadataBase: new URL("https://yourdomain.vercel.app"), 
+   authors: [{ name: "Syam Kumar", url: "https://syamdevportfolio.vercel.app/" }],
+  metadataBase: new URL("https://syamdevportfolio.vercel.app/"), 
   openGraph: {
     title: "Syam Kumar | Full Stack Web Developer",
     description:
       "Explore my portfolio — modern, responsive web apps built using React, Next.js, and Spring Boot.",
-    url: "https://yourdomain.vercel.app",
+    url: "https://syamdevportfolio.vercel.app/",
     siteName: "Syam Kumar Portfolio",
     images: [
       {

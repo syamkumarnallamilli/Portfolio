@@ -9,7 +9,7 @@ const projects = [
   {
     title: "MicroTweet - Scalable Social Platform ",
     tech: ["React", "Spring Boot", "DSA"],
-    desc: " Developed a scalable social platform using microservices architecture to support user profiles, tweet management, and real-time search. Implemented secure authentication with token-based sessions and BCrypt encryption for passwords. Optimized tweet indexing with B-Trees and ordering with Linked Lists for efficient retrieval. Designed a graph-based following system using adjacency lists and traversal algorithms for smart follow suggestions. Enhanced user experience with priority queue–based feed ranking and Tries for fast hashtag autocomplete.",
+    desc: "Built a scalable social platform with microservices, secure authentication (BCrypt), and efficient tweet management. Designed graph-based follow suggestions, DSA-optimized feed ranking, and fast hashtag autocomplete for a seamless user experience.",
     img: "/spring.png", 
     github: "https://github.com/syamkumarnallamilli/TwitterDSA1",
     live: "https://github.com/syamkumarnallamilli/TwitterDSA1",
