@@ -6,7 +6,7 @@ import Contact from "./contact/page";
 
 export default function Main() {
   return (
-   <div className="bg-gradient-to-r from-purple-100 via-white to-violet-100">
+   <div className="bg-gradient-to-r from-purple-100 via-white to-violet-100 min-h-screen space-y-10">
     <Home/>
     <About/>
     <Projects/>

@@ -60,6 +60,8 @@ const Contact = () => {
 });
 const [loading, setLoading] = React.useState(false);
 const [error, setError] = React.useState("");
+const [success, setSuccess] = React.useState("");
+
 
   const handleChange=(e)=>{
     const {name,value}=e.target;
@@ -80,8 +82,9 @@ const handleSubmit = async (e) => {
     });
     if (!res.ok) throw new Error("Failed to send message");
 
-    alert("Message sent successfully!");
+    setSuccess("Message sent successfully!");
     setFormData({ name: "", email: "", subject: "", message: "" });
+    setTimeout(() => setSuccess(""), 4000);
   } catch (err) {
     console.error(err);
     setError("Failed to send message. Please try again later.");
@@ -103,7 +106,7 @@ const handleSubmit = async (e) => {
       {/* Card Grid */}
       <div className="w-full max-w-7xl flex flex-col md:flex-row gap-8 justify-center items-start">
         {/* Left Info Card */}
-        <div className="bg-white shadow-md rounded-xl w-full md:w-1/3 p-8 space-y-6">
+        <div className="bg-white shadow-md rounded-xl w-full md:w-1/3 md:p-5 lg:p-8 p-8 space-y-6">
           {contactDetails.map((item, idx) => (
   <div key={idx}>
     <div className="flex items-center gap-2 text-gray-700">
@@ -130,14 +133,14 @@ const handleSubmit = async (e) => {
           {/* Professional Profiles */}
           <div className="border-t pt-4 ">
   <p className="text-sm font-semibold mb-4">Professional Profiles</p>
-  <div className="flex gap-4  flex-wrap">
+  <div className="flex gap-4 md:gap-2 lg:gap-4 flex-wrap">
     {profiles.map((profile, idx) => (
       <a
         key={idx}
         href={profile.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="px-3 py-1 border rounded-md text-sm hover:bg-gray-100 transition flex items-center gap-2"
+        className="px-3 md:px-2 lg:px-4 py-1 border rounded-md text-sm md:text-xs lg:text-sm hover:bg-gray-100 transition flex items-center gap-2 md:gap-1 lg:gap-2"
       >
         <span>{profile.label}</span>
         <ExternalLink className="w-5 h-4  " />
@@ -213,6 +216,12 @@ const handleSubmit = async (e) => {
               {loading ? "Sending..." : "Send Message"}
             </button>
           </form>
+          {success && (
+  <p className="text-green-600 bg-green-50 border border-green-200 rounded-md p-2 text-center font-medium animate-fadeIn">
+    {success}
+  </p>
+)}
+
         </div>
       </div>
     </section>
