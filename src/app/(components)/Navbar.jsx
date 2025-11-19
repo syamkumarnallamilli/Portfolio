@@ -14,7 +14,7 @@ const Navbar = () => {
     { label: "About", href: "/about" },
     { label: "Projects", href: "/project" },
     { label: "Contact", href: "/contact" },
-    { label: "Resume", href: "/SyamKumar_Nallamilli_e.pdf", external: true },
+    { label: "Resume", href: "SyamKumar_Nallamilli_Resume.pdf", external: true },
   ];
 
   const activeLinkClass = (href, external = false) => {

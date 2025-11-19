@@ -28,7 +28,7 @@ const projects = [
   desc: "A beautifully designed, fully responsive photography portfolio website built with Next.js and Tailwind CSS. It features smooth animations, dynamic image galleries, and optimized performance across all devices. The site highlights modern UI aesthetics and showcases photography work in an engaging, mobile-friendly layout.",
   img: "/photography.jpg", 
   github: "https://github.com/SatyasriMallula/Vijay-Photography",
-  live: "#",
+  live: "https://blueyephotostudio.vercel.app/",
 },
 
   {
