@@ -76,7 +76,7 @@ export default function ProjectsSection() {
             viewport={{ once: true }}
           >
             {/* Text Section */}
-            <div className="flex-1  md:space-y-4 space-y-3 text-center md:text-left">
+            <div id="project" className="flex-1  md:space-y-4 space-y-3 text-center md:text-left">
               <h3 className="text-2xl lg:text-3xl font-semibold text-[#1c2541]">
                 {project.title}
               </h3>
