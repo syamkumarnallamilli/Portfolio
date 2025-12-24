@@ -75,7 +75,7 @@ const handleSubmit = async (e) => {
   setError("");
   //Google form submission logic can be added here
   try {
-    const res = await fetch("api/contact", {
+    const res = await fetch("/api/contact", {
       method: "POST",
       
       body: new URLSearchParams(formData).toString(),
