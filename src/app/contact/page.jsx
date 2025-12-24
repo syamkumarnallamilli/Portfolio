@@ -94,7 +94,7 @@ const handleSubmit = async (e) => {
 };
 
   return (
-    <section className="w-full px-4 py-10 bg-gradient-to-r from-purple-100 via-white to-violet-100 flex flex-col items-center">
+    <section id="contact-form" className="w-full px-4 py-10 bg-gradient-to-r from-purple-100 via-white to-violet-100 flex flex-col items-center">
       {/* Heading */}
       <div className="text-center mb-10">
         <h1 className="text-3xl font-bold text-purple-700">Get In Touch</h1>

@@ -74,7 +74,7 @@ useEffect(() => {
   }, [isHovered, speed, skillsControl]);
 
   return (
-    <section className="min-h-screen  flex flex-col items-center justify-center px-6  lg:px-16  relative overflow-hidden">
+    <section id="about" className="min-h-screen  flex flex-col items-center justify-center px-6  lg:px-16  relative overflow-hidden">
       {/* Decorative Background Blobs */}
       <div className="absolute top-0 left-0 w-52 h-52 md:w-72 md:h-72  rounded-full blur-3xl opacity-30 animate-pulse" />
       <div className="absolute bottom-0 right-0 w-52 h-52 md:w-72 md:h-72  rounded-full blur-3xl opacity-30 animate-pulse" />

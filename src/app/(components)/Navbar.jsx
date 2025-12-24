@@ -10,10 +10,10 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Projects", href: "/project" },
-    { label: "Contact", href: "/contact" },
+    { label: "Home", href: "#" },
+    { label: "About", href: "#about" },
+    { label: "Projects", href: "#project" },
+    { label: "Contact", href: "#contact-form" },
     { label: "Resume", href: "SyamKumar_Nallamilli_Resume.pdf", external: true },
   ];
 
