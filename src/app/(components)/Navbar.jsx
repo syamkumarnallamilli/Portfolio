@@ -10,7 +10,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Home", href: "#" },
+    { label: "Home", href: "/" },
     { label: "About", href: "#about" },
     { label: "Projects", href: "#project" },
     { label: "Contact", href: "#contact-form" },
@@ -29,6 +29,7 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full z-[999] bg-white dark:bg-gray-900 shadow-lg">
       <div className="flex max-w-7xl mx-auto justify-between items-center px-6 py-4">
+        <Link href="/">
         {/* --- Logo --- */}
         <div className="flex items-center gap-2">
           <Image
@@ -42,7 +43,9 @@ const Navbar = () => {
           <span className="text-xl font-bold text-gray-800 dark:text-white hidden md:inline">
             Syam Kumar
           </span>
+          
         </div>
+        </Link>
 
         {/* --- Desktop Menu --- */}
         <div className="hidden md:flex space-x-10 font-medium">
