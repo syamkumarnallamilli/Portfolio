@@ -154,8 +154,8 @@ const handleSubmit = async (e) => {
         {/* Contact Form */}
         <div className="bg-white shadow-md rounded-xl w-full md:w-2/3 p-8">
           <form className="space-y-4" onSubmit={handleSubmit}>
-            <div className="flex gap-4">
-              <div className="w-1/2">
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="md:w-1/2">
                 <label className="block text-sm font-medium mb-2">Name</label>
                 <input
                   type="text"
@@ -169,7 +169,7 @@ const handleSubmit = async (e) => {
                 />
                
               </div>
-              <div className="w-1/2">
+              <div className="md:w-1/2">
                 <label className="block text-sm font-medium mb-1">Email</label>
                 <input
                   type="email"
