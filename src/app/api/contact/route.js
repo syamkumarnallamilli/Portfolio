@@ -3,12 +3,12 @@ export async function POST(req) {
 
   const res = await fetch(process.env.SCRIPT_URL, {
     method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body:new URLSearchParams(body).toString(),
+    headers: { "Content-Type": "application/json" },
+    body,
   });
 
   const data = await res.text();
   return new Response(data, {
-    headers: { "Content-Type": "text/plain" },
+    headers: { "Content-Type": "application/json" },
   });
 }

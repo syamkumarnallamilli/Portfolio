@@ -78,7 +78,8 @@ const handleSubmit = async (e) => {
     const res = await fetch("/api/contact", {
       method: "POST",
       
-      body: new URLSearchParams(formData).toString(),
+       headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
     });
     if (!res.ok) throw new Error("Failed to send message");
 
