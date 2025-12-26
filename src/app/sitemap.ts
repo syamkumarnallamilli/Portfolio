@@ -10,19 +10,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/#home`,
+      url: `${baseUrl}/home`,
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/#about`,
+      url: `${baseUrl}/about`,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/#project`,
+      url: `${baseUrl}/project`,
       priority: 0.6,
     },
     {
-      url: `${baseUrl}/#contact`,
+      url: `${baseUrl}/contact`,
       priority: 0.7,
     },
   ];
