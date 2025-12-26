@@ -72,6 +72,7 @@ const [success, setSuccess] = React.useState("");
 const handleSubmit = async (e) => {
   e.preventDefault();
   setLoading(true);
+  console.log(formData);
   setError("");
   //Google form submission logic can be added here
   try {
