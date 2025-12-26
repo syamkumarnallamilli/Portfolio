@@ -13,7 +13,7 @@ const Navbar = () => {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Projects", href: "/project" },
-    { label: "Contact", href: "/contact-form" },
+    { label: "Contact", href: "/contact" },
     { label: "Resume", href: "SyamKumar_Nallamilli_Resume.pdf", external: true },
   ];
 
