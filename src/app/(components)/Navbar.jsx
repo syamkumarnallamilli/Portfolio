@@ -11,9 +11,9 @@ const Navbar = () => {
 
   const navItems = [
     { label: "Home", href: "/" },
-    { label: "About", href: "#about" },
-    { label: "Projects", href: "#project" },
-    { label: "Contact", href: "#contact-form" },
+    { label: "About", href: "/about" },
+    { label: "Projects", href: "/project" },
+    { label: "Contact", href: "/contact-form" },
     { label: "Resume", href: "SyamKumar_Nallamilli_Resume.pdf", external: true },
   ];
 

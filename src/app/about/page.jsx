@@ -95,7 +95,7 @@ useEffect(() => {
         <div
           className={`relative md:w-1/2 ${
             experiences.length > 2 ? "md:h-[450px] overflow-y-auto" : "h-auto"
-          } md:p-4  md:pr-6 scrollbar-thin scrollbar-thumb-purple-300 scrollbar-track-purple-100 rounded-2xl bg-white/40 backdrop-blur-md border border-purple-200`}
+          } md:p-4 p-2 md:pr-6 scrollbar-thin scrollbar-thumb-purple-300 scrollbar-track-purple-100 rounded-2xl bg-white/40 backdrop-blur-md border border-purple-200`}
         >
           <div className="absolute left-3 md:left-6 top-0 bottom-0 md:w-1 w-[2px] bg-gradient-to-b from-purple-300 via-pink-300 to-yellow-200 rounded-full" />
 
