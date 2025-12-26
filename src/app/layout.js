@@ -29,6 +29,9 @@ export const metadata = {
 
    authors: [{ name: "Syam Kumar", url: "https://syamdevportfolio.vercel.app/" }],
   metadataBase: new URL("https://syamdevportfolio.vercel.app/"), 
+  verification: {
+    google: "pxawGgvOEdrGf6I-LWhAPOBd6UnnByz-mTD2cIIrmV0"
+  },
   openGraph: {
     title: "Syam Kumar | Full Stack Web Developer",
     description:
