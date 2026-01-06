@@ -10,20 +10,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/home`,
-      priority: 0.9,
-    },
-    {
       url: `${baseUrl}/about`,
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/project`,
-      priority: 0.6,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/contact`,
-      priority: 0.7,
+      priority: 0.8,
     },
   ];
 }

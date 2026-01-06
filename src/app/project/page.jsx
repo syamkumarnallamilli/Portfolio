@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+export const metadata = {
+  title: "Projects | Syam Kumar",
+  description: "Projects by Syam Kumar - Full Stack Developer",
+  alternates: {
+    canonical: "https://syamdevportfolio.vercel.app/project",
+  },
+};
 
 const projects = [
   {
