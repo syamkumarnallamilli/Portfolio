@@ -1,9 +1,20 @@
 'use client';
 import { ExternalLink, Mail, MapPin, MessageCircleHeart, Phone, Pin } from "lucide-react";
 import React from "react";
+
+
+export const metadata = {
+  title: "Contact-Us | Syam Kumar",
+  description: "Contact Syam Kumar - Full Stack Developer",
+  alternates: {
+    canonical: "https://syamdevportfolio.vercel.app/contact",
+  },
+};
+
 const whatsApp=process.env.NEXT_PUBLIC_WHATSAPP_NUMBER
 
 const MailTo=process.env.NEXT_PUBLIC_CONTACT_EMAIL
+
 const contactDetails = [
   {
     label: "Email",

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import Link from "next/link";
 
+
 export default function Home() {
   return (
     <section className="flex flex-col md:flex-row items-center justify-center min-h-screen px-5 md:px-8 lg:px-16 bg-gradient-to-br from-slate-900 via-gray-900 to-gray-800 overflow-hidden ">

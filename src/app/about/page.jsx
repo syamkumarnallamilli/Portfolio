@@ -3,6 +3,15 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState,useRef } from "react";
 
+export const metadata = {
+  title: "About | Syam Kumar",
+  description: "About Syam Kumar - Full Stack Developer",
+  alternates: {
+    canonical: "https://syamdevportfolio.vercel.app/about",
+  },
+};
+
+
 export default function About() {
   const skills = [
     "HTML",

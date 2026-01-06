@@ -7,11 +7,13 @@ import { Analytics } from "@vercel/analytics/react";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display:"swap",
 });
 
 export const metadata = {
@@ -26,6 +28,10 @@ export const metadata = {
     "Java Developer",
     "Web Developer Portfolio",
   ],
+  alternates: {
+  canonical: "https://syamdevportfolio.vercel.app/",
+},
+
 
    authors: [{ name: "Syam Kumar", url: "https://syamdevportfolio.vercel.app/" }],
   metadataBase: new URL("https://syamdevportfolio.vercel.app/"), 
@@ -52,6 +58,17 @@ export const metadata = {
   icons: {
     icon: "/favicon.svg", 
   },
+
+  robots: {
+  index: true,
+  follow: true,
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+  },
+},
 
 };
 
