@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Syam Kumar | Web Developer | Full Stack Developer",
-  description: "Hi, I'm Syam Kumar. I build modern and responsive websites using technologies. Take a look at my work and skills.",
+  description: "Hi, I'm Syam Kumar. I build modern and responsive websites using technologies.Take a look at my work and skills.",
   keywords: [
     "Syam Kumar",
     "Full Stack Developer",
