@@ -27,7 +27,7 @@ export const metadata = {
     "Syam Portfolio",
   "Syam Developer",
   "syamdevportfolio",
-    "Syam dev Portfolio"
+    "Syam dev Portfolio",
   "Syam Kumar Java Developer",
   "Syam Kumar Full Stack Developer India",
   "React Spring Boot Developer Portfolio",
