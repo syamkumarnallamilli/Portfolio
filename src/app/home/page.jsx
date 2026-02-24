@@ -26,7 +26,7 @@ export default function Home() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          I'm Syam
+          I'm Syam Kumar
         </motion.h2>
 
         <motion.h3
