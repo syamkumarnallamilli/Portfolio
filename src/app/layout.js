@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Syam Kumar – Full Stack Java Developer | React & Spring Boot Portfolio | Web Developer | Full Stack Developer",
+  title: "Syam Kumar - Full Stack Java Developer | React & Spring Boot Portfolio | Web Developer | Full Stack Developer",
   description: "Official portfolio of Syam Kumar. I build modern and responsive websites using technologies.Explore projects, skills, and experience..",
   keywords: [
     "Syam Kumar",

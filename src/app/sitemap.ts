@@ -9,6 +9,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       priority: 1,
     },
+    { 
+    url:`${baseUrl}/home`,
+    priority:1},
     {
       url: `${baseUrl}/about`,
       priority: 0.8,
