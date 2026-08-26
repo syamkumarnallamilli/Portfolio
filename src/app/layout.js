@@ -18,10 +18,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Syam Kumar - Full Stack Java Developer | React & Spring Boot Portfolio | Web Developer | Full Stack Developer",
-  description: "Official portfolio of Syam Kumar. I build modern and responsive websites using technologies.Explore projects, skills, and experience..",
-  keywords: [
+  title: "Syam Kumar | Full Stack Developer",
+description:
+  "Official portfolio of Syam Kumar, a Full Stack Developer specializing in Java, Spring Boot, React, and Next.js. Explore my projects, skills, and experience.",  keywords: [
     "Syam Kumar",
+    "IT professional",
+    "Indian developer",
+    "IT professional portfolio",
+    "developer portfolio",
+    "Full Stack Developer",
+    "Java Developer portfolio",
   "Syam Kumar Portfolio",
   "Syam Dev",
     "Syam Portfolio",
@@ -34,6 +40,7 @@ export const metadata = {
     "Full Stack Developer",
     "React Developer",
     "Next.js Developer",
+    "developer portfolio",
     "Spring Boot Developer",
     "Java Developer",
     "Web Developer Portfolio",
@@ -82,13 +89,41 @@ export const metadata = {
 
 };
 
-
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Syam Kumar",
+  url: "https://syamdevportfolio.vercel.app/",
+  jobTitle: "Full Stack Developer",
+  description:
+    "Full Stack Developer specializing in Java, Spring Boot, React, and Next.js.",
+  knowsAbout: [
+    "Java",
+    "Spring Boot",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "Full Stack Development",
+    "Web Development",
+  ],
+  sameAs: [
+    "https://github.com/syamkumarnallamilli",
+    "https://www.linkedin.com/in/syam-kumar-nallamilli-b17809240/",
+  ],
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+           <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personSchema),
+          }}
+        />
         <Navbar/>
         <div className="pt-18 min-h-screen">
         {children}
