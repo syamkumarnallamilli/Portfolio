@@ -18,9 +18,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Syam Kumar | Full Stack Developer",
+title: "Syam Kumar | Web Developer | React & Next.js",
+
 description:
-  "Official portfolio of Syam Kumar, a Full Stack Developer specializing in Java, Spring Boot, React, and Next.js. Explore my projects, skills, and experience.",  keywords: [
+  "Official portfolio of Syam Kumar, a Web Developer specializing in React, Next.js, TypeScript, and modern web development, with knowledge of Java and Spring Boot.",
+  keywords: [
     "Syam Kumar",
     "IT professional",
     "Indian developer",
@@ -37,10 +39,10 @@ description:
   "Syam Kumar Java Developer",
   "Syam Kumar Full Stack Developer India",
   "React Spring Boot Developer Portfolio",
-    "Full Stack Developer",
+    
     "React Developer",
     "Next.js Developer",
-    "developer portfolio",
+    
     "Spring Boot Developer",
     "Java Developer",
     "Web Developer Portfolio",
@@ -56,7 +58,7 @@ description:
     google: "pxawGgvOEdrGf6I-LWhAPOBd6UnnByz-mTD2cIIrmV0"
   },
   openGraph: {
-    title: "Syam Kumar | Full Stack Web Developer",
+  title: "Syam Kumar | Web Developer | React & Next.js",
     description:
       "Explore my portfolio — modern, responsive web apps built using React, Next.js, and Spring Boot.",
     url: "https://syamdevportfolio.vercel.app/",
@@ -94,10 +96,9 @@ const personSchema = {
   "@type": "Person",
   name: "Syam Kumar",
   url: "https://syamdevportfolio.vercel.app/",
-  jobTitle: "Full Stack Developer",
+  jobTitle: "Web Developer",
   description:
-    "Full Stack Developer specializing in Java, Spring Boot, React, and Next.js.",
-  knowsAbout: [
+    "Web Developer specializing in React, Next.js, TypeScript, and modern web development, with knowledge of Java and Spring Boot.",  knowsAbout: [
     "Java",
     "Spring Boot",
     "React",

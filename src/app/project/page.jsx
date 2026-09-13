@@ -2,7 +2,8 @@ import ProjectClient from "./ProjectClient";
 
 export const metadata = {
   title: "Projects | Syam Kumar",
-  description: "Projects by Syam Kumar - Full Stack Developer",
+  description:
+    "Explore projects built by Syam Kumar using React, Next.js, TypeScript, Java, and Spring Boot.",
   alternates: {
     canonical: "https://syamdevportfolio.vercel.app/project",
   },
